@@ -1,0 +1,27 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* eller en fast højde, fx 400px */
+  }
+
+  .column > :last-child {
+    margin-top: auto;
+  }
+}
